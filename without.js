@@ -4,7 +4,7 @@ const assertArraysEqual = function(arr1, arr2) {
     console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
   } else {
     console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`);
-  }  
+  }
 };
 
 const eqArrays = function(arr1, arr2) {
@@ -23,10 +23,10 @@ const without = function(arr1, arr2) {
     for (let j = 0; j < arr2.length; j++) {
       if (arr1[i] !== arr2[j]) {
         result.push(arr1[i]);
-      }  
+      }
     }
   }
-  return result;  
+  return result;
 };
 
 //TEST CODE:
