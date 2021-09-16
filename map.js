@@ -12,10 +12,8 @@ const assertArraysEqual = function(actual, expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }  
+  }
 };
-
-
 
 //FUNCTION IMPLEMENTATION
 const map = function(array, callback) {
@@ -24,8 +22,7 @@ const map = function(array, callback) {
     results.push(callback(item));
   }
   return results;
-}
-
+};
 
 //TEST CODE
 const words = ["ground", "control", "to", "major", "tom"];
