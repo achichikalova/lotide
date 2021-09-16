@@ -7,9 +7,9 @@ const assertEqual = function(actual, expected) {
 };
 
 // FUNCTION IMPLEMENTATION
-const eqArrays = function(arr1, arr2) {
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
+const eqArrays = function(actual, expected) {
+  for (let i = 0; i < actual.length; i++) {
+    if (actual[i] !== expected[i]) {
       return false;
     }
   }
