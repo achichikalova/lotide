@@ -1,13 +1,5 @@
 //IMPORTS
-const assertEqual = function(actual, expected) {
-  console.log(Object.entries(actual).toString(), Object.entries(expected).toString());
-  if (Object.entries(actual).toString() === Object.entries(expected).toString()) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
+const assertEqual = require('./assertEqual');
 //FUNCTION
 const countLetters = function(str) {
   str = str.replace(/\s+/g, '');

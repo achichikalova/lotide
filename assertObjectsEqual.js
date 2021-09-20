@@ -1,12 +1,5 @@
 //IMPORTS
-const eqArrays = function(arr1, arr2) {
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+const eqArrays = require('./eqArrays');
 const eqObjects = function(object1, object2) {
   //return false if length of objects is not the same
   if (Object.keys(object1).length !== Object.keys(object2).length) return false;
