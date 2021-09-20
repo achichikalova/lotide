@@ -1,3 +1,5 @@
+const { letterPosition } = require(".");
+
 const letterPositions = function(sentence) {
   let str = sentence.replace(/\s+/g, '');
   const result = {};
@@ -13,6 +15,4 @@ const letterPositions = function(sentence) {
   }
   return result;
 };
-
-//TEST CODE
-console.log(letterPositions("lighthouse in the house"));
+module.exports = letterPositions;
