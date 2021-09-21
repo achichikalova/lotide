@@ -6,6 +6,10 @@ const middle = require('./middle');
 const eqArrays = require('./eqArrays');
 const eqObjects = require('./eqObjects');
 
+const assertEqual = require('./assertEqual');
+const assertArraysEqual = require('./assertArraysEqual');
+const assertObjectsEqual = require('./assertObjectsEqual');
+
 const countOnly = require('./countOnly');
 const countLetters = require('./countLetters');
 
