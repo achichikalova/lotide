@@ -10,15 +10,12 @@ const isPalindrome = function (str) {
     return true;
   }
 
-  let result = false;
   for (let i = 0; i < midIndex; i++) {
     if (noSpaces[i] != noSpaces[lastIndex - i]) {
       return false;
-    } else {
-      result = true;
     }
   }
-  return result;
+  return true;
 };
 
 // Assertion Function
