@@ -3,9 +3,7 @@
 // FUNCTION IMPLEMENTATION (NO MORE BUGS)
 const isPalindrome = function (str) {
   const noSpaces = str.split(" ").join("").toLowerCase();
-  console.log(noSpaces);
   const midIndex = Math.floor(noSpaces.length / 2);
-  console.log(noSpaces[midIndex]);
   const lastIndex = noSpaces.length - 1;
 
   if (str.length === 1) {
