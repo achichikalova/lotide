@@ -64,10 +64,12 @@ const mostPopular = (users) => {
   const max = Object.keys(followed).filter((x) => {
     return followed[x] == Math.max.apply(null, Object.values(followed));
   });
+
   const winners = max.map((winner) => {
     return users[winner].name;
   });
-  return `More followers has ${winners.join(", ")}`;
+
+  return `More followers has: ${winners.join(", ")}`;
 };
 
 console.log(mostPopular(data));
