@@ -62,6 +62,7 @@ const mostPopular = (users) => {
   }
 
   const max = Object.keys(followed).filter((x) => {
+    console.log(x);
     return followed[x] == Math.max.apply(null, Object.values(followed));
   });
 
